@@ -17,7 +17,11 @@ namespace Recursion
             //NestedRecursionDemo();
             //SumDemo();
             //FactorialDemo();
-            PowerDemo();
+            //PowerDemo();
+            //TowerOfHanoiDemo();
+            //FibonacciDemo();
+            //MemoDemo();
+            PascalTriangleDemo();
         }
 
         private static void Method1()
@@ -107,6 +111,26 @@ namespace Recursion
         {
             Power power = new Power();
             Console.WriteLine(power.Exponent(2, 30));
+        }
+        private static void TowerOfHanoiDemo()
+        {
+            TowerOfHanoi toh = new TowerOfHanoi();
+            toh.TOH(3, 'A', 'B','C');
+        }
+        private static void FibonacciDemo()
+        {
+            Fibonacci fib = new Fibonacci();
+            Console.WriteLine(fib.fib(6));
+        }
+        private static void MemoDemo()
+        {
+            FibMemo fib = new FibMemo();
+            Console.WriteLine(fib.Memo(6));
+        }
+        private static void PascalTriangleDemo()
+        {
+            PascalTriangle pt = new PascalTriangle();
+            pt.PrintPascalTriangle(5);
         }
     }
 }
